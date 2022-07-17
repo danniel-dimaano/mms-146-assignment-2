@@ -79,6 +79,10 @@ class Lamp:
         
 # This is the Main Program
 
+#This code will print two empty lines just to format the appearance of the console
+print ("")
+print ("")
+
 lamp1 = Lamp("Sylphat","Bar","Green","ON","White")
 lamp2 = Lamp("Garimond","Circular","Grey","OFF","Warm")
 
