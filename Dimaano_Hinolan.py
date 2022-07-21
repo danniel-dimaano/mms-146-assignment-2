@@ -70,6 +70,7 @@ fan2.change_state("Off")
 print ("Current state:", fan2.state)
 
 
+
 #This is Tile class
 
 """
@@ -80,7 +81,6 @@ brand options by Wilcon and Eurotiles. Then, he explained his tile preferences t
 And he wanted tile shapes that were not too ordinary. 
 
 With that, he was presented with two options for a bathroom-friendly tile: 
-
 First is the Wilcon brand with a porcelain material in the shape of a hexagon with a sandblasted texture, a coastal luster, and 8mm thickness. But he also wanted 
 the same tile features in a slate material, so he was presented with a slate tile material with the same tile design. 
 
@@ -91,7 +91,6 @@ Danniel liked the two options he was presented with. But before he decides, he w
 offers the best quality and design, in particular, with the tile material. That is why he also switched the tile materials from Wilcon's porcelain to their 
 slate and Eurotiles' slate to their porcelain to see which one has the better deal. So, he took tile samples from each brand with his specific preferences to 
 see which one fits best with his bathroom for this new bedroom. 
-
 """
 
 class Tile: 
@@ -106,22 +105,22 @@ class Tile:
         self.thickness = th
 
 #methods
-    def change_name(self,n):
+    def give_name(self,n):
         self.name = n 
 
-    def change_material(self,ma):
+    def set_material(self,ma):
         self.material = ma 
 	      
-    def change_shape(self,sh):
-        self.shape = sh
+    def set_geometry(self,sh):
+        self.geometry = sh
 	      
-    def change_texture(self,tx):
+    def set_texture(self,tx):
         self.texture = tx 
 	      
-    def change_luster(self,lu):
+    def make_luster(self,lu):
         self.luster = lu
 
-    def change_thickness(self,th):
+    def set_thickness(self,th):
         self.thickness = th
         
 tile1 = Tile("Wilcon", "Porcelain", "Hexagon", "Sandblasted", "Coastal", "8mm")
@@ -132,7 +131,7 @@ print("Brand:",tile1.name)
 print("")
 
 print("Initial Material:",tile1.material)
-tile1.change_material("Slate")
+tile1.set_material("Slate")
 print ("Change material to:", tile1.material)
 print("Shape:",tile1.shape)
 print("Texture:",tile1.texture)
@@ -147,7 +146,7 @@ print("Brand:",tile2.name)
 print("")
 
 print("Initial Material:",tile2.material)
-tile2.change_material("Porcelain")
+tile2.set_material("Porcelain")
 print ("Change material to:", tile2.material)
 print("Shape:",tile2.shape)
 print("Texture:",tile2.texture)
