@@ -208,3 +208,236 @@ print ("Shape: ", lamp2.shape)
 print ("Lamp state: ", lamp2.state)
 
 
+"""
+Situation:
+Josanine wanted to contribute into building the dream boarding place with her friends.
+She pitched to give a refrigirator but was confused with the options she was presented with during
+her shopping at the mall.
+"""
+
+#We will now define the attributes and methods for the refrigerator object
+class Refrigerator:
+    def __init__(self,n,c,ty,cap,st,temp):
+        self.name = n
+        self.color = c
+        self.type = ty
+        self.capacity = cap
+        self.state = st
+        self.temperature = temp
+        
+    #The actions for the object define / intend to function as their names implies
+    def change_name(self,n):
+        self.name = n
+        
+    def pick_color(self,c):
+        self.color = c
+    
+    def define_type(self,ty):
+        self.type = ty
+        
+    def set_capacity(self,cap):
+        self.capacity = cap
+        
+    def change_state(self,st):
+        self.state = st
+        
+    def set_temperature(self,temp):
+        self.temperature = temp
+        
+#And this is the Main Program
+
+#This weird lines are there to act as a decoration.
+#The lines below will add two succeeding lines withouot any contents.
+print("")
+print("")
+
+refA = Refrigerator("LG","Shiny Silver","Side-by-Side","350 Liters","ON","24 degrees Celcius")
+
+print ("Brand Name: ",refA.name)
+print ("Color: ", refA.color)
+print ("Type: ", refA.type)
+print ("Total Capacity: ",refA.capacity)
+print ("State:", refA.state)
+print ("Current Temp.: ", refA.temperature)
+
+
+print("")
+print("")
+
+#But then, Josanine wished to look for a different color of the same type and brand of refrigerator
+
+print ("Brand Name: ",refA.name)
+#This line can change the refrigerator into any color Josanine wishes
+refA.pick_color("Midnight Black")
+
+print ("Color: ", refA.color)
+print ("Type: ", refA.type)
+print ("Total Capacity: ",refA.capacity)
+print ("State:", refA.state)
+print ("Current Temp.: ", refA.temperature)
+
+
+#And so, Josanine was delighted with her newly bought refrigerator in "Midnight Black!"
+
+
+
+#This class is for a new object
+#The object is a household Iron
+
+"""
+Situation:
+Josanine headed to the "Washing Section" of the appliance store she visited yesterday.
+She was greeted with vast variety of irons to pick, so she decided to narrow down her choices
+into three brands offering similar functionalities (her trusted brand "Xiaomi", and two unfamiliar
+brands she saw while browsing the catalouge online).
+She wanted an iron that will help her save space in her room.
+"""
+
+#We will now define the attributes and methods of the iron object
+class Iron:
+    def __init__(self,n,c,ty,watt,st):
+        self.name = n
+        self.color = c
+        self.type = ty
+        self.wattage = watt
+        self.state = st
+        
+    #The actions of the object intends to do what their names suggests :>
+    def change_name(self,n):
+        self.name = n
+        
+    def pick_color(self,c):
+        self.color = c
+    
+    def define_type(self,ty):
+        self.type = ty
+        
+    def set_wattage(self,watt):
+        self.wattage = watt
+        
+    def change_state(self,st):
+        self.state = st
+        
+        
+        
+#And this is the Main Program
+
+print("")
+print("")
+
+iron1 = Iron("Black+Decker","Black","Steam Iron","1,200 watts","OFF")
+iron2 = Iron("Xiaomi","White","Travel Steam Iron","1,200 watts","OFF")
+iron3 = Iron("Rowenta Focus","Red","Steam Iron","1,725 watts","OFF")
+
+print ("Brand Name: ",iron1.name)
+print ("Color: ", iron1.color)
+print ("Type: ", iron1.type)
+print ("Wattage: ",iron1.wattage)
+print ("State:", iron1.state)
+
+print("")
+print("")
+
+print ("Brand Name: ",iron2.name)
+print ("Color: ", iron2.color)
+print ("Type: ", iron2.type)
+print ("Wattage: ",iron2.wattage)
+print ("State:", iron2.state)
+
+print("")
+print("")
+
+print ("Brand Name: ",iron3.name)
+print ("Color: ", iron3.color)
+print ("Type: ", iron3.type)
+print ("Wattage: ",iron3.wattage)
+print ("State:", iron3.state)
+
+#Josanine was happy for her purchase!
+#Josanine picked the Xiaomi Travel Steam Iron as it was compact and has a small form-factor.
+
+"""
+Josanine suddenly decided to pick a new slippers to use for inside and for outside of the house.
+She was presented with various options by the sales lady inside the "Clothing Section" of the mall
+she went in.
+So she narrowed down her options by looking at specific brands and specific designs.
+"""
+
+
+#We will now define the attributes and methods of the slippers object    
+class Slippers:
+    def __init__(self,n,c,sz,use,mat):
+        self.name = n
+        self.color = c
+        self.size = sz
+        self.usage = use
+        self.material = mat
+        
+    #The following strings are written to help the encoders to manipulate the methids
+    def change_name(self,n):
+        self.name = n
+        
+    def pick_color(self,c):
+        self.color = c
+    
+    def set_size(self,sz):
+        self.size = sz
+        
+    def define_usage(self,use):
+        self.usage = use
+        
+    def define_material(self,mat):
+        self.material = mat
+        
+    
+#And this is the Main Program
+
+
+print("")
+print("")
+
+slip1 = Slippers("Marquina - The Bonnie Penny Loafers","Oxblood Burgundy","7","Office Shoes","Leather  ")
+slip2 = Slippers("Nike - Jordan Sophia","Off-White","7","INDOORS","Rubber and Foam")
+slip3 = Slippers("Vionic - Mule Slippers","Tan","8","INDOORS","Polyester Terry Cloth")
+
+
+print ("Brand Name: ",slip1.name)
+print ("Color: ", slip1.color)
+print ("Size: ", slip1.size)
+print ("Usage: ",slip1.usage)
+print ("Material Used:", slip1.material)
+
+print("")
+print("")
+
+print ("Brand Name: ",slip2.name)
+print ("Color: ", slip2.color)
+print ("Size: ", slip2.size)
+print ("Usage: ",slip2.usage)
+print ("Material Used:", slip2.material)
+
+
+print("")
+print("")
+
+print ("Brand Name: ",slip3.name)
+print ("Color: ", slip3.color)
+
+#There are many colors to choose from!
+slip3.pick_color("Black, Light Pink, and Dark Blue")
+print ("Other Available Colors: ", slip3.color)
+print ("Size: ", slip3.size)
+print ("Usage: ",slip3.usage)
+print ("Material Used:", slip3.material)
+
+
+"""
+Josanine was feeling tired from trying out various shoe types and sizes.
+She only looked for one outdoor shoe and two for indoor shoes.
+Josanine then decided to purchase one outdoor and one indoor shoe.
+And she decided to go for her only option for outdoor shoes and her most loved mule indoors shoes
+from Vionic.
+"""
+
+
+
