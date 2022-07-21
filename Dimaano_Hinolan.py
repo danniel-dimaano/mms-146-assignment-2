@@ -3,7 +3,7 @@
 """ 
 Situation:
 
-Danniel plans to purchase an electric fan for his new bedroom; however, he first wants to look at options before deciding. So, to narrow his choices, 
+2Danniel plans to purchase an electric fan for his new bedroom; however, he first wants to look at options before deciding. So, to narrow his choices, 
 he settled with two brands: Asahi and Xiaomi. Then, he considered the following: the electric fan's type, color, state, mode, and speed. 
 
 He mainly wanted a ceiling or tower fan as those are space-savers for his bedroom. Then he found the colors green or pink complementary to his room's theme. 
@@ -17,32 +17,32 @@ Then, he turned the Asahi and  Xiaomi fans off and observed whether the green ce
 class Fan: 
     
 #attributes
-    def __init__(self, n, t, c, dj, m, p):
+    def __init__(self, n, ty, co, st, mo, sp):
         self.name = n
-        self.type = t
-        self.color = c
-        self.state = dj
-        self.mode = m
-        self.speed = p
+        self.type = ty
+        self.color = co
+        self.state = st
+        self.mode = mo
+        self.speed = sp
 
 #methods
     def give_name(self,n):
-        self.name = n 
+        self.name = n
 	      
-    def change_type(self,t):
-        self.type = t
+    def change_type(self,ty):
+        self.type = ty
 	      
-    def change_color(self,c):
-        self.color = c 
+    def change_color(self,co):
+        self.color = co
 	      
-    def change_state(self,dj):
-        self.state = dj
+    def change_state(self,st):
+        self.state = st
 
-    def change_mode(self,m):
-        self.mode = m
+    def change_mode(self,mo):
+        self.mode = mo
 	      
-    def change_speed(self,p):
-        self.speed = p
+    def change_speed(self,sp):
+        self.speed = sp
 
 fan1 = Fan("Asahi", "Ceiling", "Green", "On", "Swing", "Medium")
 fan2 = Fan("Xiaomi", "Tower", "Pink", "On", "Still", "High")
