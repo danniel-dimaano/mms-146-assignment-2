@@ -1,15 +1,13 @@
 # This is Fan (electric) class 
 
 """ 
-Situation:
+Danniel plans to purchase an electric fan for his new bedroom; however, he first wants to look at options before deciding. So, to narrow his choices, he settled 
+with two brands: Asahi and Xiaomi. Then, he considered the following: the electric fan's type, color, state, mode, and speed. 
 
-Danniel plans to purchase an electric fan for his new bedroom; however, he first wants to look at options before deciding. So, to narrow his choices, 
-he settled with two brands: Asahi and Xiaomi. Then, he considered the following: the electric fan's type, color, state, mode, and speed. 
-
-He mainly wanted a ceiling or tower fan as those are space-savers for his bedroom. Then he found the colors green or pink complementary to his room's theme. 
-So, he asked for an Asahi Ceiling fan in the color green and a Xiaomi Tower fan in pink. Then, he turned them on and checked if the Asahi ceiling fan could
-rotate smoothly in 360 degrees when on swing mode enough to cover his bedroom even when on medium speed only. And he turned on the Xiaomi tower fan and placed 
-it at high speed to see if it could cover a vast space even on still mode.
+He mainly wanted a ceiling or tower fan as those are space-savers for his bedroom. Then he found the colors green or pink complementary to his room's theme. So, 
+he asked for an Asahi Ceiling fan in the color green and a Xiaomi Tower fan in pink. Then, he turned them on and checked if the Asahi ceiling fan could 
+rotate smoothly at 360 degrees when on swing mode enough to cover his bedroom from medium to high speed. And he turned on the Xiaomi tower fan and placed it from 
+medium to high speed to see if it could cover a vast space even on still mode.
 
 Then, he turned the Asahi and  Xiaomi fans off and observed whether the green ceiling fan or the pink tower fan fit his bedroom the best. 
 """
@@ -41,22 +39,22 @@ class Fan:
     def change_mode(self,mo):
         self.mode = mo
 	      
-    def change_speed(self,sp):
+    def set_speed(self,sp):
         self.speed = sp
 
 fan1 = Fan("Asahi", "Ceiling", "Green", "On", "Swing", "Medium")
-fan2 = Fan("Xiaomi", "Tower", "Pink", "On", "Still", "High")
-fan3 = Fan("Asahi", "Ceiling", "Green", "Off", "None", "None")
-fan4 = Fan("Xiaomi", "Tower", "Pink", "Off", "None", "None")
+fan2 = Fan("Xiaomi", "Tower", "Pink", "On", "Still", "Medium")
 
 print ("Brand:",fan1.name)
 print ("Type:",fan1.type)
 print ("Color:",fan1.color)
 print ("Previous State:",fan1.state)
 print ("Mode:",fan1.mode)
-print ("Speed:",fan1.speed)
+print ("Initial Speed:",fan1.speed)
+fan1.set_speed("High")
+print ("Change speed to:",fan1.speed)
 fan1.change_state("Off")
-print ("Current state:", fan1.state)
+print ("Current state:",fan1.state)
 
 print("")
 
@@ -65,7 +63,9 @@ print ("Type:",fan2.type)
 print ("Color:",fan2.color)
 print ("Previous State:",fan2.state)
 print ("Mode:",fan2.mode)
-print ("Speed:",fan2.speed)
+print ("Initial Speed:",fan2.speed)
+fan2.set_speed("High")
+print ("Change speed to:",fan2.speed)
 fan2.change_state("Off")
 print ("Current state:", fan2.state)
 
