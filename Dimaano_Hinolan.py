@@ -3,7 +3,7 @@
 """ 
 Situation:
 
-2Danniel plans to purchase an electric fan for his new bedroom; however, he first wants to look at options before deciding. So, to narrow his choices, 
+Danniel plans to purchase an electric fan for his new bedroom; however, he first wants to look at options before deciding. So, to narrow his choices, 
 he settled with two brands: Asahi and Xiaomi. Then, he considered the following: the electric fan's type, color, state, mode, and speed. 
 
 He mainly wanted a ceiling or tower fan as those are space-savers for his bedroom. Then he found the colors green or pink complementary to his room's theme. 
@@ -52,37 +52,107 @@ fan4 = Fan("Xiaomi", "Tower", "Pink", "Off", "None", "None")
 print ("Brand:",fan1.name)
 print ("Type:",fan1.type)
 print ("Color:",fan1.color)
-print ("State:",fan1.state)
+print ("Previous State:",fan1.state)
 print ("Mode:",fan1.mode)
 print ("Speed:",fan1.speed)
+fan1.change_state("Off")
+print ("Current state:", fan1.state)
 
 print("")
 
 print ("Brand:",fan2.name)
 print ("Type:",fan2.type)
 print ("Color:",fan2.color)
-print ("State:",fan2.state)
+print ("Previous State:",fan2.state)
 print ("Mode:",fan2.mode)
 print ("Speed:",fan2.speed)
+fan2.change_state("Off")
+print ("Current state:", fan2.state)
+
+
+#This is Tile class
+
+"""
+Situation:
+
+For Danniel's bathroom, he wanted to be specific with its tiles to ensure that it is pleasing, durable, and safe. So, he went to a tile store and found two 
+brand options by Wilcon and Eurotiles. Then, he explained his tile preferences to the store assistant; he wanted something that was not slippery but will look shiny. 
+And he wanted tile shapes that were not too ordinary. 
+
+With that, he was presented with two options for a bathroom-friendly tile: 
+
+First is the Wilcon brand with a porcelain material in the shape of a hexagon with a sandblasted texture, a coastal luster, and 8mm thickness. But he also wanted 
+the same tile features in a slate material, so he was presented with a slate tile material with the same tile design. 
+
+On the other hand, Eurotiles offers a slate material in the shape of a chevron with an etched texture but with oyster luster and a thickness of 6mm. So, Danniel 
+also asked for the Eurotiles' tile design but in the porcelain material. 
+
+Danniel liked the two options he was presented with. But before he decides, he wants to make sure that he gets to see thoroughly on which brand 
+offers the best quality and design, in particular, with the tile material. That is why he also switched the tile materials from Wilcon's porcelain to their 
+slate and Eurotiles' slate to their porcelain to see which one has the better deal. So, he took tile samples from each brand with his specific preferences to 
+see which one fits best with his bathroom for this new bedroom. 
+
+"""
+
+class Tile: 
+    
+#attributes
+    def __init__(self, n, ma, sh, tx, lu, th):
+        self.name = n
+        self.material = ma
+        self.shape = sh
+        self.texture = tx
+        self.luster = lu
+        self.thickness = th
+
+#methods
+    def change_name(self,n):
+        self.name = n 
+
+    def change_material(self,ma):
+        self.material = ma 
+	      
+    def change_shape(self,sh):
+        self.shape = sh
+	      
+    def change_texture(self,tx):
+        self.texture = tx 
+	      
+    def change_luster(self,lu):
+        self.luster = lu
+
+    def change_thickness(self,th):
+        self.thickness = th
+        
+tile1 = Tile("Wilcon", "Porcelain", "Hexagon", "Sandblasted", "Coastal", "8mm")
+tile2 = Tile("Eurotiles", "Slate", "Chevron", "Etched", "Oyster", "6mm")
+
+print("Brand:",tile1.name)
+
+print("")
+
+print("Initial Material:",tile1.material)
+tile1.change_material("Slate")
+print ("Change material to:", tile1.material)
+print("Shape:",tile1.shape)
+print("Texture:",tile1.texture)
+print("Luster:",tile1.luster)
+print("Thickness:",tile1.thickness)
 
 print("")
 print("")
 
-print ("Brand:",fan3.name)
-print ("Type:",fan3.type)
-print ("Color:",fan3.color)
-print ("State:",fan3.state)
-print ("Mode:",fan3.mode)
-print ("Speed:",fan3.speed)
+print("Brand:",tile2.name)
 
 print("")
 
-print ("Brand:",fan4.name)
-print ("Type:",fan4.type)
-print ("Color:",fan4.color)
-print ("State:",fan4.state)
-print ("Mode:",fan4.mode)
-print ("Speed:",fan4.speed)
+print("Initial Material:",tile2.material)
+tile2.change_material("Porcelain")
+print ("Change material to:", tile2.material)
+print("Shape:",tile2.shape)
+print("Texture:",tile2.texture)
+print("Luster:",tile2.luster)
+print("Thickness:",tile2.thickness)
 
 
 
