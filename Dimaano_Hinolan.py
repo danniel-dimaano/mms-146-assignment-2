@@ -10,6 +10,9 @@ rotate smoothly at 360 degrees when on swing mode enough to cover his bedroom fr
 medium to high speed to see if it could cover a vast space even on still mode.
 
 Then, he turned the Asahi and  Xiaomi fans off and observed whether the green ceiling fan or the pink tower fan fit his bedroom the best. 
+
+At last, he picked the Xiaomi Tower fan in pink and decided to buy it already for his new bedroom. As he found its speed from medium to high stronger and more 
+refreshing, the tower fan type is also a space saver and could cover a vast area of his room, and the color pink complements the theme of his room very well. 
 """
 
 class Fan: 
@@ -46,6 +49,9 @@ fan1 = Fan("Asahi", "Ceiling", "Green", "On", "Swing", "Medium")
 fan2 = Fan("Xiaomi", "Tower", "Pink", "On", "Still", "Medium")
 
 print ("Brand:",fan1.name)
+
+print("")
+
 print ("Type:",fan1.type)
 print ("Color:",fan1.color)
 print ("Previous State:",fan1.state)
@@ -57,8 +63,12 @@ fan1.change_state("Off")
 print ("Current state:",fan1.state)
 
 print("")
+print("")
 
 print ("Brand:",fan2.name)
+
+print("")
+
 print ("Type:",fan2.type)
 print ("Color:",fan2.color)
 print ("Previous State:",fan2.state)
@@ -74,23 +84,22 @@ print ("Current state:", fan2.state)
 #This is Tile class
 
 """
-Situation:
-
-For Danniel's bathroom, he wanted to be specific with its tiles to ensure that it is pleasing, durable, and safe. So, he went to a tile store and found two 
-brand options by Wilcon and Eurotiles. Then, he explained his tile preferences to the store assistant; he wanted something that was not slippery but will look shiny. 
-And he wanted tile shapes that were not too ordinary. 
+For Danniel's bathroom, he wanted to be specific with its tiles to ensure that it is pleasing, durable, and safe. So, he went to an online tile store and found 
+two brand options by Wilcon and Eurotiles. Then, he specified his tile preferences to the store's virtual assistant; he wanted something that was not slippery 
+but will look shiny. And he wanted tile shapes that were not too ordinary. 
 
 With that, he was presented with two options for a bathroom-friendly tile: 
+
 First is the Wilcon brand with a porcelain material in the shape of a hexagon with a sandblasted texture, a coastal luster, and 8mm thickness. But he also wanted 
 the same tile features in a slate material, so he was presented with a slate tile material with the same tile design. 
 
 On the other hand, Eurotiles offers a slate material in the shape of a chevron with an etched texture but with oyster luster and a thickness of 6mm. So, Danniel 
 also asked for the Eurotiles' tile design but in the porcelain material. 
 
-Danniel liked the two options he was presented with. But before he decides, he wants to make sure that he gets to see thoroughly on which brand 
-offers the best quality and design, in particular, with the tile material. That is why he also switched the tile materials from Wilcon's porcelain to their 
-slate and Eurotiles' slate to their porcelain to see which one has the better deal. So, he took tile samples from each brand with his specific preferences to 
-see which one fits best with his bathroom for this new bedroom. 
+Danniel liked the two options he was presented with. But before he decides, he wants to make sure that he gets to see thoroughly on which brand offers the best 
+quality and design, in particular, with the tile material. That is why he also switched the tile materials from Wilcon's porcelain to their slate and Eurotiles' slate
+to their porcelain to see which one has the better deal. So, he ordered tile samples from each brand with his specific preferences to see which one fits best with his 
+bathroom for this new bedroom. From there, once he's sure about a particular choice for his bathroom tiles is when he will order a bunch to start construction.
 """
 
 class Tile: 
@@ -152,6 +161,172 @@ print("Shape:",tile2.shape)
 print("Texture:",tile2.texture)
 print("Luster:",tile2.luster)
 print("Thickness:",tile2.thickness)
+
+
+
+#This is Bed class
+
+"""
+Another thing that Danniel wants for his bedroom is to meticulously pick a bed that fits him and his standard of comfort. So, he went online shopping again, but this 
+time for a bed. And he had the following things to consider: it must be a single bed for an adult person with a rectangular shape, either metal or wood frame, and in
+a brand new condition with a comfortable mattress to sleep on. 
+
+The online store offers a wide range of brands to choose from. But he picked the Sleepwell and Wakefit brands for his options since he is already familiar with those 
+two. 
+
+First, the Sleepwell brand offers a brand new adult single bed with a size of 90cm x 190cm in a rectangular shape. However, they only have the bed in a metal bed 
+frame material. So, he checked the two options available: the iron metal and the steel metal frame. And they have a traditional foam mattress that comes with it. 
+
+And second, the Wakefit brand has the same features as the Sleepwell brand. But they only have it in a wooden bed frame material which he can choose between mahogany 
+or oak wood frames. But it comes with a gel memory foam mattress. 
+
+Since Danniel finds it crucial to find the most durable and comfortable bed possible, he took his time to decide. He researched his options until he chose the 
+Sleepwell brand with the steel metal bed frame because he discovered that metal steel bed frames are durable yet more affordable, and the Sleepwell brand has a gel 
+memory foam mattress that comes with it. And that is a good quality mattress and bed he has wanted for a while now.
+"""
+
+class Bed: 
+    
+#attributes
+    def __init__(self, n, sz, mt, fr, us, co, sh):
+        self.name = n
+        self.size = sz
+        self.mattress_material = mt
+        self.frame_material = fr
+        self.user = us
+        self.condition = co
+        self.shape = sh
+
+#methods
+    def give_name(self,n):
+        self.name = n 
+
+    def set_size(self,sz):
+        self.size = sz
+
+    def pick_mattress_material(self,mt):
+        self.mattress_material = mt
+	      
+    def pick_frame_material(self,fr):
+        self.frame_material = fr
+	      
+    def set_user(self,us):
+        self.user = us
+	      
+    def set_condition(self,co):
+        self.condition = co
+
+    def define_shape(self,sh):
+        self.shape = sh
+        
+bed1 = Bed("Sleepwell", "Single (90cm x 190cm)", "Traditional Foam", "Metal", "Adult Person", "Brand New", "Rectangular")
+
+bed2 = Bed("Wakefit", "Single (90cm x 190cm)", "Gel Memory Foam", "Wood", "Adult Person", "Brand New", "Rectangular")
+
+print("Brand:",bed1.name)
+
+print("")
+
+print("Size:",bed1.size)
+print("Mattress Material:",bed1.mattress_material)
+print("Bed Frame Material:",bed1.frame_material)
+bed1.pick_frame_material("Iron Metal")
+print ("Change to Metal Option 1:", bed1.frame_material)
+bed1.pick_frame_material("Steel Metal")
+print ("Change to Metal Option 2:", bed1.frame_material)
+print("User:",bed1.user)
+print("Condition:",bed1.condition)
+print("Shape:",bed1.shape)
+
+print("")
+print("")
+
+print("Brand:",bed2.name)
+
+print("")
+
+print("Size:",bed2.size)
+print("Mattress Material:",bed2.mattress_material)
+print("Bed Frame Material:",bed2.frame_material)
+bed1.pick_frame_material("Mahogany Wood")
+print ("Change to Wood Option 1:", bed1.frame_material)
+bed1.pick_frame_material("Oak Wood")
+print ("Change to Wood Option 2:", bed1.frame_material)
+print("User:",bed2.user)
+print("Condition:",bed2.condition)
+print("Shape:",bed2.shape)
+
+
+
+#This is Soap class
+
+"""
+To complete his bathroom essentials, Danniel went to the Lush online store to order a customized body soap and gift it to his friends at the boarding place. So he 
+considered the following: the soap's shape, color, fragrance, usage, and lather intensity. 
+
+And as he scrolled, he found a color yellow body soap in a rectangular shape with a lather intensity of seven in a lemon citrus scent. However, he doesn't feel like 
+it is the right one for him and something his friends would enjoy having for a bath. So, he customized the body soap through the Lush website's soap customization 
+featured page and changed the shape to an oval, the color to peach, and its fragrance to an oat milk scent, but kept the lather intensity to seven. 
+
+Once satisfied with his choice of soap, he ordered a couple of pieces for himself and his friends. 
+"""
+
+class Soap: 
+    
+#attributes
+    def __init__(self, n, sh, co, fg, ug, lh):
+        self.name = n
+        self.shape = sh
+        self.color = co
+        self.fragrance = fg
+        self.usage = ug
+        self.lather_intensity = lh
+        
+#methods
+    def give_name(self,n):
+        self.name = n 
+
+    def set_shape(self,sh):
+        self.shape = sh
+
+    def set_color(self,co):
+        self.color = co
+    
+    def set_fragrance(self,fg):
+        self.fragrance = fg
+    
+    def define_usage(self,ug):
+        self.usage = ug
+    
+    def set_lather_intensity(self,lh):
+        self.lather_intensity = lh
+
+soap = Soap("Lush", "Rectangle", "Yellow", "Lemon Citrus", "Body Soap", "7")
+
+print("Brand:",soap.name)
+
+print("")
+
+print("Shape Option 1:",soap.shape)
+soap.set_shape("Oval")
+print ("Change to Shape Option 2:",soap.shape)
+
+print("")
+
+print("Color Option 1:",soap.color)
+soap.set_color("Peach")
+print ("Change to Color Option 2:",soap.color)
+
+print("")
+
+print("Fragrance Option 1:",soap.fragrance)
+soap.set_fragrance("Oat Milk")
+print ("Change to Fragrance Option 2:",soap.fragrance)
+
+print("")
+
+print("Usage:",soap.usage)
+print("Lather Intensity:",soap.lather_intensity)
 
 
 
@@ -382,7 +557,7 @@ class Slippers:
     
     def set_size(self,sz):
         self.size = sz
-        
+         
     def define_usage(self,use):
         self.usage = use
         
