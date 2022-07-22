@@ -45,7 +45,7 @@ rotate smoothly at 360 degrees when on swing mode enough to cover his bedroom fr
 And he turned on the Xiaomi tower fan and placed it from medium to high speed to see if it could cover a 
 vast space even on still mode.
 
-Then, he turned the Asahi and  Xiaomi fans off and observed whether the green ceiling fan or the pink tower 
+Then, he turned the Asahi and Xiaomi fans off and observed whether the green ceiling fan or the pink tower 
 fan fit his bedroom the best. 
 
 At last, he picked the Xiaomi Tower fan in pink and decided to buy it already for his new bedroom. As he found 
