@@ -6,7 +6,7 @@ from the University of the Philippines - Open University. And since they are onl
 distance learning students, they and their group of friends from class decided to
 rent a boarding place where they could each have separate bedrooms, which also
 serve as their personal study spaces. Being in college, they wanted to have a sense
-of independence and figure out things in their life as they grew and matured. 
+of independence and figure out things in their life as they grow and mature. 
 
 So, since Danniel and Josanine were the first to move into their new boarding
 place, they decided to go ahead and organize their respective bedrooms. They each
