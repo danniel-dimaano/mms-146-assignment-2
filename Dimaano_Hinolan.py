@@ -1,3 +1,5 @@
+#INTRODUCTION
+
 """
 Danniel and Josanine are an incoming third-year BA in Multimedia Studies students
 from the University of the Philippines - Open University. And since they are online
@@ -25,8 +27,6 @@ items that will best fit their needs and expectations.
 
 So, keep scrolling to see how these two did on their shopping errand!
 """
-
-
 
 
 # This is Fan (electric) class 
@@ -739,4 +739,11 @@ indoor pair of slippers.
 """
 
 
+#TO END...
+"""
+Finally, Danniel and Josanine were able to complete the items on their list and
+will be able to settle comfortably in their new boarding place and separate
+bedrooms. Indeed, they will be well-prepared to start their new adventure of living
+together under one roof as their new trimester begins in a few weeks.
+"""
 
