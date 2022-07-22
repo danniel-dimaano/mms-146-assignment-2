@@ -146,7 +146,9 @@ print ("Change speed to:",fan2.speed)
 fan2.change_state("Off")
 print ("Current state:", fan2.state)
 
-
+#The codes below are here to serve as decorations
+print("")
+print("")
 
 #This is Tile class
 
@@ -261,7 +263,9 @@ print("Texture:",tile2.texture)
 print("Luster:",tile2.luster)
 print("Thickness:",tile2.thickness)
 
-
+#The codes below are here to serve as decorations
+print("")
+print("")
 
 #This is Bed class
 
@@ -393,7 +397,9 @@ print("User:",bed2.user)
 print("Condition:",bed2.condition)
 print("Shape:",bed2.shape)
 
-
+#The codes below are here to serve as decorations
+print("")
+print("")
 
 #This is Soap class
 
