@@ -34,18 +34,26 @@ So, keep scrolling to see how these two did on their shopping errand!
 """ 
 Situation: 
 
-Danniel plans to purchase an electric fan for his new bedroom; however, he first wants to look at options before deciding. So, to narrow his choices, he settled 
-with two brands: Asahi and Xiaomi. Then, he considered the following: the electric fan's type, color, state, mode, and speed. 
+Danniel plans to purchase an electric fan for his new bedroom; however, he first
+wants to look at options before deciding. So, to narrow his choices, he settled
+with two brands: Asahi and Xiaomi. Then, he considered the following: the electric
+fan's type, color, state, mode, and speed. 
 
-He mainly wanted a ceiling or tower fan as those are space-savers for his bedroom. Then he found the colors green or pink complementary to his room's theme. So, 
-he asked for an Asahi Ceiling fan in the color green and a Xiaomi Tower fan in pink. Then, he turned them on and checked if the Asahi ceiling fan could 
-rotate smoothly at 360 degrees when on swing mode enough to cover his bedroom from medium to high speed. And he turned on the Xiaomi tower fan and placed it from 
-medium to high speed to see if it could cover a vast space even on still mode.
+He mainly wanted a ceiling or tower fan as those are space-savers for his bedroom.
+Then he found the colors green or pink complementary to his room's theme. So, he
+asked for an Asahi Ceiling fan in the color green and a Xiaomi Tower fan in pink.
+Then, he turned them on and checked if the Asahi ceiling fan could rotate smoothly
+at 360 degrees when on swing mode enough to cover his bedroom from medium to high
+speed. And he turned on the Xiaomi tower fan and placed it from medium to high
+speed to see if it could cover a vast space even on still mode.
 
-Then, he turned the Asahi and  Xiaomi fans off and observed whether the green ceiling fan or the pink tower fan fit his bedroom the best. 
+Then, he turned the Asahi and  Xiaomi fans off and observed whether the green
+ceiling fan or the pink tower fan fit his bedroom the best. 
 
-At last, he picked the Xiaomi Tower fan in pink and decided to buy it already for his new bedroom. As he found its speed from medium to high stronger and more 
-refreshing, the tower fan type is also a space saver and could cover a vast area of his room, and the color pink complements the theme of his room very well. 
+At last, he picked the Xiaomi Tower fan in pink and decided to buy it already for
+his new bedroom. As he found its speed from medium to high stronger and more
+refreshing, the tower fan type is also a space saver and could cover a vast area of
+his room, and the color pink complements the theme of his room very well. 
 """
 
 class Fan: 
