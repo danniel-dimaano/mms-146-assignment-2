@@ -34,26 +34,23 @@ So, keep scrolling to see how these two did on their shopping errand!
 """ 
 Situation: 
 
-Danniel plans to purchase an electric fan for his new bedroom; however, he first
-wants to look at options before deciding. So, to narrow his choices, he settled
-with two brands: Asahi and Xiaomi. Then, he considered the following: the electric
-fan's type, color, state, mode, and speed. 
+Danniel plans to purchase an electric fan for his new bedroom; however, he first wants to look at 
+options before deciding. So, to narrow his choices, he settled with two brands: Asahi and Xiaomi. 
+Then, he considered the following: the electric fan's type, color, state, mode, and speed. 
 
-He mainly wanted a ceiling or tower fan as those are space-savers for his bedroom.
-Then he found the colors green or pink complementary to his room's theme. So, he
-asked for an Asahi Ceiling fan in the color green and a Xiaomi Tower fan in pink.
-Then, he turned them on and checked if the Asahi ceiling fan could rotate smoothly
-at 360 degrees when on swing mode enough to cover his bedroom from medium to high
-speed. And he turned on the Xiaomi tower fan and placed it from medium to high
-speed to see if it could cover a vast space even on still mode.
+He mainly wanted a ceiling or tower fan as those are space-savers for his bedroom. Then he found the 
+colors green or pink complementary to his room's theme. So, he asked for an Asahi Ceiling fan in the color 
+green and a Xiaomi Tower fan in pink. Then, he turned them on and checked if the Asahi ceiling fan could 
+rotate smoothly at 360 degrees when on swing mode enough to cover his bedroom from medium to high speed. 
+And he turned on the Xiaomi tower fan and placed it from medium to high speed to see if it could cover a 
+vast space even on still mode.
 
-Then, he turned the Asahi and  Xiaomi fans off and observed whether the green
-ceiling fan or the pink tower fan fit his bedroom the best. 
+Then, he turned the Asahi and  Xiaomi fans off and observed whether the green ceiling fan or the pink tower 
+fan fit his bedroom the best. 
 
-At last, he picked the Xiaomi Tower fan in pink and decided to buy it already for
-his new bedroom. As he found its speed from medium to high stronger and more
-refreshing, the tower fan type is also a space saver and could cover a vast area of
-his room, and the color pink complements the theme of his room very well. 
+At last, he picked the Xiaomi Tower fan in pink and decided to buy it already for his new bedroom. As he found 
+its speed from medium to high stronger and more refreshing, the tower fan type is also a space saver and could 
+cover a vast area of his room, and the color pink complements the theme of his room very well. 
 """
 
 class Fan: 
@@ -129,7 +126,7 @@ print ("Brand:",fan2.name)
 #This code will print one empty line to seperate the brand name from the rest
 print("")
 
-#This will print the type, color, state, mode, and speed of Fan No. 2
+#The ff. will print the type, color, state, mode, and speed of Fan No. 2
 print ("Type:",fan2.type)
 print ("Color:",fan2.color)
 
@@ -154,6 +151,8 @@ print ("Current state:", fan2.state)
 #This is Tile class
 
 """
+Situation:
+
 For Danniel's bathroom, he wanted to be specific with its tiles to ensure that it
 is pleasing, durable, and safe. So, he went to an online tile store and found 
 two brand options by Wilcon and Eurotiles. Then, he specified his tile preferences
@@ -161,7 +160,6 @@ to the store's virtual assistant; he wanted something that was not slippery
 but will look shiny. And he wanted tile shapes that were not too ordinary. 
 
 With that, he was presented with two options for a bathroom-friendly tile: 
-
 First is the Wilcon brand with a porcelain material in the shape of a hexagon with
 a sandblasted texture, a coastal luster, and 8mm thickness. But he also wanted
 the same tile features in a slate material, so he was presented with a slate tile
@@ -184,7 +182,7 @@ construction.
 
 class Tile: 
     
-#attributes
+#This contains the set of codes representing the attributes
     def __init__(self, n, ma, sh, tx, lu, th):
         self.name = n
         self.material = ma
@@ -193,7 +191,7 @@ class Tile:
         self.luster = lu
         self.thickness = th
 
-#methods
+#This contains the set of codes representing the methods
     def give_name(self,n):
         self.name = n 
 
@@ -211,32 +209,53 @@ class Tile:
 
     def set_thickness(self,th):
         self.thickness = th
-        
+
+
+#This is the main program
+
+#These are the two options we made for the Tile object 
 tile1 = Tile("Wilcon", "Porcelain", "Hexagon", "Sandblasted", "Coastal", "8mm")
 tile2 = Tile("Eurotiles", "Slate", "Chevron", "Etched", "Oyster", "6mm")
 
+#This code will print the brand name of the Tile No. 1
 print("Brand:",tile1.name)
 
+#This code will print one empty line to seperate the brand name from the rest
 print("")
 
+#The ff. will print the material, shape, texture, luster, and thickness of Tile No. 1
+
+#This code will print the initial material of the Wilcon Tile Brand
 print("Initial Material:",tile1.material)
+
+#This code will print the new material of the Wilcon Tile Brand
 tile1.set_material("Slate")
 print ("Change material to:", tile1.material)
+
 print("Shape:",tile1.shape)
 print("Texture:",tile1.texture)
 print("Luster:",tile1.luster)
 print("Thickness:",tile1.thickness)
 
+#This code will print two empty lines to seperate the Wilcon and Eurotile brands
 print("")
 print("")
 
+#This code will print the brand name of the Tile No. 2
 print("Brand:",tile2.name)
 
-print("")
+#This code will print one empty line to seperate the brand name from the rest
+print("") 
 
+#The ff. will print the material, shape, texture, luster, and thickness of Tile No. 2 
+
+#This code will print the initial material of the Eurotiles Tile Brand
 print("Initial Material:",tile2.material)
+
+#This code will print the new material of the Eurotiles Tile Brand
 tile2.set_material("Porcelain")
 print ("Change material to:", tile2.material)
+
 print("Shape:",tile2.shape)
 print("Texture:",tile2.texture)
 print("Luster:",tile2.luster)
@@ -247,6 +266,8 @@ print("Thickness:",tile2.thickness)
 #This is Bed class
 
 """
+Situation:
+
 Another thing that Danniel wants for his bedroom is to meticulously pick a bed
 that fits him and his standard of comfort. So, he went online shopping again, but
 this time for a bed. And he had the following things to consider: it must be a
@@ -276,7 +297,7 @@ bed he has wanted for a while now.
 
 class Bed: 
     
-#attributes
+#This contains the set of codes representing the attributes
     def __init__(self, n, sz, mt, fr, us, co, sh):
         self.name = n
         self.size = sz
@@ -286,7 +307,7 @@ class Bed:
         self.condition = co
         self.shape = sh
 
-#methods
+#This contains the set of codes representing the methods
     def give_name(self,n):
         self.name = n 
 
@@ -307,40 +328,67 @@ class Bed:
 
     def define_shape(self,sh):
         self.shape = sh
-        
+    
+    
+#This is the main program
+
+#These are the two options we made for the Bed object
 bed1 = Bed("Sleepwell", "Single (90cm x 190cm)", "Traditional Foam", "Metal", "Adult Person", "Brand New", "Rectangular")
 
 bed2 = Bed("Wakefit", "Single (90cm x 190cm)", "Gel Memory Foam", "Wood", "Adult Person", "Brand New", "Rectangular")
 
+#This code will print the brand name of the Bed No. 1
 print("Brand:",bed1.name)
 
+#This code will print one empty line to seperate the brand name from the rest
 print("")
+
+#The ff. will print the size, mattress material, bed frame material, user, condition, and shape of Bed No. 1
 
 print("Size:",bed1.size)
 print("Mattress Material:",bed1.mattress_material)
+
+#This code will print the initial material of the Sleepwell Bed Brand
 print("Bed Frame Material:",bed1.frame_material)
+
+#This code will print the Metal Option 1 of the Sleepwell Bed Brand
 bed1.pick_frame_material("Iron Metal")
 print ("Change to Metal Option 1:", bed1.frame_material)
+
+#This code will print the Metal Option 2 of the Sleepwell Bed Brand
 bed1.pick_frame_material("Steel Metal")
 print ("Change to Metal Option 2:", bed1.frame_material)
+
 print("User:",bed1.user)
 print("Condition:",bed1.condition)
 print("Shape:",bed1.shape)
 
+#This code will print two empty lines to seperate the Sleepwell and Wakefit brands
 print("")
 print("")
 
+#This code will print the brand name of the Bed No. 2
 print("Brand:",bed2.name)
 
+#This code will print one empty line to seperate the brand name from the rest
 print("")
 
+#The ff. will print the size, mattress material, bed frame material, user, condition, and shape of Bed No. 2
+             
 print("Size:",bed2.size)
 print("Mattress Material:",bed2.mattress_material)
+
+#This code will print the initial material of the Wakefit Bed Brand
 print("Bed Frame Material:",bed2.frame_material)
+
+#This code will print the Wood Option 1 of the Wakefit Bed Brand
 bed1.pick_frame_material("Mahogany Wood")
 print ("Change to Wood Option 1:", bed1.frame_material)
+
+#This code will print the Wood Option 2 of the Wakefit Bed Brand
 bed1.pick_frame_material("Oak Wood")
 print ("Change to Wood Option 2:", bed1.frame_material)
+
 print("User:",bed2.user)
 print("Condition:",bed2.condition)
 print("Shape:",bed2.shape)
@@ -350,6 +398,8 @@ print("Shape:",bed2.shape)
 #This is Soap class
 
 """
+Situation:
+
 To complete his bathroom essentials, Danniel went to the Lush online store to order
 a customized body soap and gift it to his friends at the boarding place. So he
 considered the following: the soap's shape, color, fragrance, usage, and lather
@@ -358,6 +408,7 @@ intensity.
 And as he scrolled, he found a color yellow body soap in a rectangular shape with a
 lather intensity of seven in a lemon citrus scent. However, he doesn't feel like it
 is the right one for him and something his friends would enjoy having for a bath.
+
 So, he customized the body soap through the Lush website's soap customization
 featured page and changed the shape to an oval, the color to peach, and its
 fragrance to an oat milk scent, but kept the lather intensity to seven. 
@@ -368,7 +419,7 @@ and his friends.
 
 class Soap: 
     
-#attributes
+#This contains the set of codes representing the attributes
     def __init__(self, n, sh, co, fg, ug, lh):
         self.name = n
         self.shape = sh
@@ -377,7 +428,7 @@ class Soap:
         self.usage = ug
         self.lather_intensity = lh
         
-#methods
+#This contains the set of codes representing the methods
     def give_name(self,n):
         self.name = n 
 
@@ -395,29 +446,49 @@ class Soap:
     
     def set_lather_intensity(self,lh):
         self.lather_intensity = lh
+    
+    
+#This is the main program
 
+#Here is the option for the Soap object 
 soap = Soap("Lush", "Rectangle", "Yellow", "Lemon Citrus", "Body Soap", "7")
 
+#This code will print the brand name of the Soap Object
 print("Brand:",soap.name)
 
+#This code will print one empty line to seperate the brand name from the rest
 print("")
 
+#The ff. will print the shape, color, fragrance, usage, and lather intensity of the Soap object 
+
+#This code will print the initial shape of the Lush Soap Brand
 print("Shape Option 1:",soap.shape)
+
+#This code will print another shape option of the Lush Soap Brand
 soap.set_shape("Oval")
 print ("Change to Shape Option 2:",soap.shape)
 
+#This code will print one empty line to seperate the soap's shape option
 print("")
 
+#This code will print the initial color of the Lush Soap Brand
 print("Color Option 1:",soap.color)
+
+#This code will print another color option of the Lush Soap Brand
 soap.set_color("Peach")
 print ("Change to Color Option 2:",soap.color)
 
+#This code will print one empty line to seperate the soap's color option
 print("")
 
+#This code will print the initial fragrance of the Lush Soap Brand
 print("Fragrance Option 1:",soap.fragrance)
+
+#This code will print another fragrance option of the Lush Soap Brand
 soap.set_fragrance("Oat Milk")
 print ("Change to Fragrance Option 2:",soap.fragrance)
 
+#This code will print one empty line to seperate the soap's fragrance option
 print("")
 
 print("Usage:",soap.usage)
@@ -427,6 +498,7 @@ print("Lather Intensity:",soap.lather_intensity)
 
 """
 Situation:
+
 Everyone knows how much of a night owl Josanine has always been. She's a pro at
 staying late at night for study or leisure time, so a good-quality and durable lamp
 is essential for her bedroom. With that, she went to a lighting store that sells
@@ -499,6 +571,7 @@ she found the style more pleasing and the light friendly to her vision.
 
 """
 Situation:
+
 Josanine went to the mall's appliance section to contribute to their group to find
 a refrigerator that best suited their needs at the boarding place. Specifically,
 she wants a side-by-side type of fridge with a capacity of 350 liters and
@@ -588,6 +661,7 @@ home.
 
 """
 Situation:
+
 Another day, another chance for Josanine to finish her shopping errand. So, she
 returned to the mall's Appliance Section to find an electric iron for her clothes.
 She was greeted with a wide variety of choices. So, she narrowed down her choices
@@ -677,6 +751,7 @@ space saver and is already a familiar and trusted brand to her.
 
 """
 Situation:
+
 One more thing from Josanine's list is a new pair of slippers for inside and
 outside the house. So, she went to the mall's Footwear Section, overwhelmed with
 how many choices she had to choose from. 
