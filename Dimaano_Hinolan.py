@@ -358,7 +358,7 @@ class Lamp:
         
 # This is the Main Program
 
-#This code will print two empty lines just to format the appearance of the dode in the console
+#This code will print two empty lines just to format the appearance of the code in the console
 print ("")
 print ("")
 
@@ -572,6 +572,8 @@ class Slippers:
 #And this is the Main Program
 
 
+#This weird lines are here to act as a decoration.
+#The code below will add two succeeding lines withouot any contents.
 print("")
 print("")
 
@@ -586,6 +588,8 @@ print ("Size: ", slip1.size)
 print ("Usage: ",slip1.usage)
 print ("Material Used:", slip1.material)
 
+
+#These codes are for decorations only
 print("")
 print("")
 
@@ -595,7 +599,7 @@ print ("Size: ", slip2.size)
 print ("Usage: ",slip2.usage)
 print ("Material Used:", slip2.material)
 
-
+#These codes are for decorations only
 print("")
 print("")
 
