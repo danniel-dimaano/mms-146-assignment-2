@@ -358,7 +358,7 @@ class Lamp:
         
 # This is the Main Program
 
-#This code will print two empty lines just to format the appearance of the console
+#This code will print two empty lines just to format the appearance of the dode in the console
 print ("")
 print ("")
 
@@ -373,7 +373,7 @@ print ("Light color: ",lamp1.light_color)
 lamp1.change_state("OFF")
 print ("Current state: ", lamp1.state)
 
-#This code will print two empty lines just to format the appearance of the console
+#This code will print two empty lines just to format the appearance of the code in the console
 print ("")
 print ("")
 
@@ -421,8 +421,8 @@ class Refrigerator:
         
 #And this is the Main Program
 
-#This weird lines are there to act as a decoration.
-#The lines below will add two succeeding lines withouot any contents.
+#This weird lines are here to act as a decoration.
+#The code below will add two succeeding lines withouot any contents.
 print("")
 print("")
 
@@ -435,12 +435,12 @@ print ("Total Capacity: ",refA.capacity)
 print ("State:", refA.state)
 print ("Current Temp.: ", refA.temperature)
 
-
+#This is also for decorations only
 print("")
 print("")
 
 #But then, Josanine wished to look for a different color of the same type and brand of refrigerator
-
+#Let us change the color!
 print ("Brand Name: ",refA.name)
 #This line can change the refrigerator into any color Josanine wishes
 refA.pick_color("Midnight Black")
@@ -497,9 +497,11 @@ class Iron:
         
 #And this is the Main Program
 
+#The codes below are here to serve as decorations
 print("")
 print("")
 
+#Let us create 3 iron objects.
 iron1 = Iron("Black+Decker","Black","Steam Iron","1,200 watts","OFF")
 iron2 = Iron("Xiaomi","White","Travel Steam Iron","1,200 watts","OFF")
 iron3 = Iron("Rowenta Focus","Red","Steam Iron","1,725 watts","OFF")
@@ -510,6 +512,7 @@ print ("Type: ", iron1.type)
 print ("Wattage: ",iron1.wattage)
 print ("State:", iron1.state)
 
+#The codes below are here to serve as decorations
 print("")
 print("")
 
@@ -519,6 +522,7 @@ print ("Type: ", iron2.type)
 print ("Wattage: ",iron2.wattage)
 print ("State:", iron2.state)
 
+#The codes below are here to serve as decorations
 print("")
 print("")
 
